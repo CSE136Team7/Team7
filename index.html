@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> HW1 CSE 136</title>
-    <meta name="author" content = "Team7">
-    <style>
-      body{
-        margin-top: 80px;
-        margin-bottom: 100px;
-        margin-left: 150px;
-        margin-right: 150px;
-      }
-      .avatar, .img_avatar{
-        display: block;
-        margin-right: auto;
-        -moz-border-radius: 125px;
-        -webkit-border-radius: 125px;
-        border-radius: 125px;
-        -khtml-border-radius: 100px;
-        width: 250px;
-        height: 250px;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <title> HW1 CSE 136</title>
+  <meta name="author" content = "Team7">
+  <style>
+  .avatar{
+    display: block;
+    margin-right: auto;
+    -moz-border-radius: 125px;
+    -webkit-border-radius: 125px;
+    border-radius: 125px;
+    -khtml-border-radius: 100px;
+    width: 250px;
+    height: 250px;
+  }
+  .name, .title{
+    color: #58595b;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .bio{
+    color: #58595b;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 100;
+  }
+  .team-name, .team-title{
+    color: #58595b;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .team-bio{
+    color: #58595b;
+    line-height: 30px;
+    text-align: right;
+    font-weight: 100;
+  }
+  .small{
+    float: left;
+    width: 23%;
+  }
+  .large{
+    float: right;
+    width: 74%;
+  }
+  .small-team{
+    float: right;;
+    width: 23%;
+  }
+  .large-team{
+    float: left;
+    width: 74%;
+  }
+  .row{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin: 16px;
+  }
+  .row-hide{
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .webtitle{
+    font-family: "museo-sans-rounded", sans-serif;
+    color: #58595b;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .container{
+    margin: 50px 20px 50px 20px;
+    font-family: "museo-sans-rounded", sans-serif;
+  }
+  label {
+    color: #58595b;
+    font-size: 45px;
+    font-weight: 100;
+  }
 
-      .name, .title{
-        font-family:"museo-sans-rounded", sans-serif;
-        color: #58595b;
-        text-align: left;
-        font-size: 20px;
-        font-weight: 100;
-      }
+  @media screen and (max-width: 1000px) {
+    .row{
+      padding-top: 0px;
+    }
+    .small{
+      float: left;
+      width: 100%;
+      padding-top: 30px;
+    }
+    .large{
+      float: right;
+      width: 100%;
+    }
+    .avatar, .avatar {
 
-      .bio{
-        font-family:"museo-sans-rounded", sans-serif;
-        color: #58595b;
-        text-align: left;
-        line-height: 30px;
-        font-weight: 100;
-      }
-      .team-name, .team-title{
-        font-family:"museo-sans-rounded", sans-serif;
-        color: #58595b;
-        text-align: right;
-        font-size: 20px;
-        font-weight: 100;
-      }
+    margin-right: auto;
+    margin-left: auto;
 
-      .team-bio{
-        font-family:"museo-sans-rounded", sans-serif;
-        color: #58595b;
-        line-height: 30px;
-        text-align: right;
-          font-weight: 100;
-      }
-      .small{
-        float: left;
-        width: 22%;
-      }
-      .large{
-        float: right;
-        width: 72%;
-      }
-      .small-team{
-        float: right;;
-        width: 23%;
-      }
-      .large-team{
-        float: left;
-        width: 74%;
-      }
-
-      .row{
-        padding-top: 100px;
-        padding-bottom: 150px;
-      }
-      .row-hide{
-        padding-top: 150px;
-        padding-bottom: 150px;
-      }
-      .webtitle{
-        font-family: "museo-sans-rounded", sans-serif;
-        color: #58595b;
-        text-align: center;
-        line-height: 30px;
-        font-weight: 100;
-        font-size: 20px;
-      }
-
-      .container{
-        padding-bottom: 100px;
-      }
-      label {
-        color: #58595b;
-        font-family: "museo-sans-rounded", sans-serif;
-        font-size: 45px;
-        font-weight: 100;
-      }
-    </style>
-  </head>
-  <body>
-   <div class = "container">
+}
+  }
+  </style>
+</head>
+<body>
+  <div class = "container">
     <div class="webtitle">
       <label>Team Seven</label><br><br>
 
@@ -107,122 +115,110 @@
       Each of us has valuable skills, which you'll discover more in details below!
       Let's meet the team.
     </div>
-      <div class="row">
-        <div class="small">
-          <div ><img class="img_avatar" width="220" src="https://scontent.cdninstagram.com/t51.2885-19/11821122_513490505466314_735158319_a.jpg" alt="image not found"></div>
+    <div class="row">
+      <div class="small">
+        <div ><img class="avatar" width="220" src="https://scontent.cdninstagram.com/t51.2885-19/11821122_513490505466314_735158319_a.jpg" alt="image not found"></div>
+      </div>
+      <div class="large">
+        <div class="name">Constance Rousseaux</div>
+        <div class="title">Team Lead</div>
+        <div class="bio">
+          Constance is a senior student majoring in Computer Science and Project Management. She arrived in San Diego in January and staying there for 2 quarters. <br/>
+          What she likes the most in Computer Science is back-end and data analysis.<br/>
+          When she is not coding, she likes to hang out with her friends and do some sightseeing around SD.
         </div>
-        <div class="large">
-          <div class="name">Constance Rousseaux</div>
-          <div class="title">Team Lead</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small">
+        <div><img class="avatar" width="220" src="https://avatars2.githubusercontent.com/u/7494486?v=3&s=460" alt="image not found"></div>
+      </div>
+      <div class="large">
+        <div class="text-right">
+          <div class="name">Bhavik Upadhyaya</div>
+          <div class="title">Designer / Developer</div>
           <div class="bio">
-            Constance is a senior student majoring in Computer Science and Project Management. She arrived in San Diego in January and staying there for 2 quarters. <br/>
-            What she likes the most in Computer Science is back-end and data analysis.<br/>
-            When she is not coding, she likes to hang out with her friends and do some sightseeing around SD.
-          </div>
-        </div>
-      </div>
-
-      <div class="row hide">
-        <div class="small-team">
-          <div><img class="avatar" width="220" src="https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg" alt="image not found"></div>
-        </div>
-        <div class="large-team">
-          <div class="text-right">
-            <div class="team-name">Lorem ipsum</div>
-            <div class="team-title">Design</div>
-            <div class="team-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small">
-          <div><img class="img_avatar" width="220" src="https://avatars3.githubusercontent.com/u/9300074?v=3&s=460" alt="image not found"></div>
-        </div>
-        <div class="large">
-          <div class="text-right">
-            <div class="name">Bal krishna Oli</div>
-            <div class="title">Developer</div>
-            <div class="bio">
-              He is a senior at UC San Diego majoring in computer science. He started
-            coding very later in life but fell in love with it.
-            He is passionate about web development and
-            currently Interning at Achieve Internet. In the spare time,
-            he likes to hike, surf and cook good food.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small">
-          <div><img class="avatar" width="220" src="http://i.imgur.com/wQFPc4g.jpg" alt="image not found"></div>
-        </div>
-        <div class="large">
-          <div class="name">Brian Lam</div>
-          <div class="title">Developer</div>
-          <div class="bio">
-            Brian is a senior at UCSD majoring in Computer Science with an interest in
-            database management systems. He started studying Computer Science because
-            he likes solving complex problems and wanted to learn how to code. In his
-            free time, he likes playing video games, watching TV shows, cooking, and
-            hanging out with friends.
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small">
-          <div><img class="img_avatar" width="220" src="https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg" alt="image not found"></div>
-        </div>
-        <div class="large">
-          <div class="text-right">
-            <div class="name">Lorem ipsum</div>
-            <div class="title">Developer</div>
-            <div class="bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row hide">
-        <div class="small-team">
-          <div><img class="avatar" width="220" src="https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg" alt="image not found"></div>
-        </div>
-        <div class="large-team">
-          <div class="text-left">
-            <div class="team-name">Lorem ipsum</div>
-            <div class="team-title">Developer</div>
-            <div class="team-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+            Bhavik is a senior Computer Science student at UCSD. Bhavik considers himself
+            to be a generalist software engineer who specializes in Java, Python and Android.
+            He recently gained an interest in Web Development after his last internship.
+            In his free time, Bhavik likes to spend time with friends and family, catch up
+            with his favorite TV shows, and exercise.
           </div>
         </div>
       </div>
     </div>
-   </div>
-  </body>
+
+    <div class="row">
+      <div class="small">
+        <div><img class="avatar" width="220" src="https://avatars3.githubusercontent.com/u/9300074?v=3&s=460" alt="image not found"></div>
+      </div>
+      <div class="large">
+        <div class="text-right">
+          <div class="name">Bal krishna Oli</div>
+          <div class="title">Developer</div>
+          <div class="bio">
+            He is a senior at UC San Diego majoring in computer science. He started
+            coding very later in life but fell in love with it.
+            He is passionate about web development and
+            currently Interning at Achieve Internet. In the spare time,
+            he likes to hike, surf and cook good food.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small">
+        <div><img class="avatar" width="220" src="http://i.imgur.com/wQFPc4g.jpg" alt="image not found"></div>
+      </div>
+      <div class="large">
+        <div class="name">Brian Lam</div>
+        <div class="title">Developer</div>
+        <div class="bio">
+          Brian is a senior at UCSD majoring in Computer Science with an interest in
+          database management systems. He started studying Computer Science because
+          he likes solving complex problems and wanted to learn how to code. In his
+          free time, he likes playing video games, watching TV shows, cooking, and
+          hanging out with friends.
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small">
+        <div><img class="avatar" width="220" src="https://scontent.fsan1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/12924431_1305011109513487_5976000451776327012_n.jpg?oh=acd10a132e405466fcd58dd9554da81a&oe=57892EB5" alt="image not found"></div>
+      </div>
+      <div class="large">
+        <div class="text-right">
+          <div class="name">Max Keomanivong</div>
+          <div class="title">Developer</div>
+          <div class="bio">
+            My name is Max Keomanivong and I am Laotion. Born in Lowell, Mass and
+            moved to California 7 years ago. I am a senior and studying computer
+            science. I like to read comics, play games, and listen to hip hop music.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small">
+        <div ><img class="avatar" width="220"  src="small.png" alt="image not found">
+        </div>
+      </div>
+      <div class="large">
+        <div class="name">Sachi Pitkin</div>
+        <div class="title">Developer</div>
+        <div class="bio">
+          Sachi is a 4th year Computer Science Major. She has a variety of interests
+          in Computer Science and is looking forward to discovering what aspect she enjoys
+          most while working at SPAWAR after graduation.<br>
+          As any sea-worthy San Diego native, she is out sailing in the bay most weekends.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
 </html>
